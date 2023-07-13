@@ -5,7 +5,7 @@ I extend ByteTrack from single-view to multi-view with centroids-reid as the ass
 # Note
 
 1. Only two views are supported for this code.
-2. Download the pretrained weights from github website of ByteTrack(put it in pretrained folder) and CTL(put it in encoder_weights folder)
+2. Download the pretrained weights from github website of ByteTrack(put it in a new folder named ***MultiView_ByteTrack/pretrained/***) and CTL(put it in a new folder named ***MultiView_ByteTrack/encoder_weights/***)
 3. For CTL, I used r50-ibn. For r50, network and image input size should be changed.
 4. Command line input is in command.txt (remember to change the camid)
    
