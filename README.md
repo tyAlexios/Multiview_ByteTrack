@@ -2,6 +2,10 @@
 
 I extend ByteTrack from single-view to multi-view with centroids-reid as the association method between different views.
 
+# Note
+
+Only two views are supported for this code.
+
 # Reference:
 
 @article{Wieczorek2021OnTU,
