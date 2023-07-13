@@ -1,0 +1,11 @@
+YOLOX_outputs
+assets
+build
+datasets
+deploy
+exps
+pretrained
+tools
+tutorials
+videos
+yolox
