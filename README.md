@@ -4,7 +4,8 @@ I extend ByteTrack from single-view to multi-view with centroids-reid as the ass
 
 # Note
 
-Only two views are supported for this code.
+1. Only two views are supported for this code.
+2. Download the pretrained weights from the github pages fo ByteTrack(put it in pretrained folder) and CTL(put it in encoder_weights folder)
 
 # Reference:
 
