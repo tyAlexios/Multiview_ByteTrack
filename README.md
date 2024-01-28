@@ -2,6 +2,12 @@
 
 I extend ByteTrack from single-view to multi-view with centroids-reid as the association method between different views.
 
+# Demo
+
+<video id="video" controls="" preload="none" poster="video0">
+      <source id="mp4" src="./demo/video0.mp4" type="video/mp4">
+</videos>
+
 # Note
 
 1. Follow the instructions in ByteTrack github page to set it up
