@@ -4,9 +4,6 @@ I extend ByteTrack from single-view to multi-view with centroids-reid as the ass
 
 # Demo
 
-<video id="video" controls="" preload="none" poster="video0">
-      <source id="mp4" src="./demo/video0.mp4" type="video/mp4">
-</videos>
 
 # Note
 
