@@ -4,6 +4,7 @@ I extend ByteTrack from single-view to multi-view with centroids-reid as the ass
 
 # Demo
 
+<img src="demo/video0-short.gif" width="400"/><img src="demo/video1-short.gif" width="400"/>
 
 # Note
 
