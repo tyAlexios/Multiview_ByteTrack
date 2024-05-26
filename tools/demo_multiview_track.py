@@ -413,8 +413,8 @@ def multiview_demo(encoder, predictor, vis_folder, current_time, args):
                         x, y, w, h = tlwh
                         x = int(x) if x >= 0 else 0
                         y = int(y) if y >= 0 else 0
-                        w = int(w)
-                        h = int(h)
+                        w = int(w) + 1
+                        h = int(h) + 1
                         cropped_bbox_imgs1.append(img1[y:y+h+1, x:x+w+1])
                         results.append(
                             f"View1: {frame_id},{tid},{tlwh[0]:.2f},{tlwh[1]:.2f},{tlwh[2]:.2f},{tlwh[3]:.2f},{t.score:.2f},-1,-1,-1\n"
@@ -435,8 +435,8 @@ def multiview_demo(encoder, predictor, vis_folder, current_time, args):
                         x, y, w, h = tlwh
                         x = int(x) if x >= 0 else 0
                         y = int(y) if y >= 0 else 0
-                        w = int(w)
-                        h = int(h)
+                        w = int(w) + 1
+                        h = int(h) + 1
                         cropped_bbox_imgs2.append(img2[y:y+h+1, x:x+w+1])
                         results.append(
                             f"View2: {frame_id},{tid},{tlwh[0]:.2f},{tlwh[1]:.2f},{tlwh[2]:.2f},{tlwh[3]:.2f},{t.score:.2f},-1,-1,-1\n"
