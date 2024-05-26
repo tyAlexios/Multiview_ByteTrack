@@ -443,14 +443,14 @@ def multiview_demo(encoder, predictor, vis_folder, current_time, args):
                             f"View2: {frame_id},{tid},{tlwh[0]:.2f},{tlwh[1]:.2f},{tlwh[2]:.2f},{tlwh[3]:.2f},{t.score:.2f},-1,-1,-1\n"
                         )
                 
-                ids, unmatched_a, unmatched_b = linear_assignment(encoder, cropped_bbox_imgs1, cropped_bbox_imgs2, online_ids1, online_ids2, args.device)
+                ids1, ids2, unmatched_a, unmatched_b = linear_assignment(encoder, cropped_bbox_imgs1, cropped_bbox_imgs2, online_ids1, online_ids2, args.device)
 
                 timer.toc()
                 online_im1 = plot_tracking(
-                    img_info1['raw_img'], online_tlwhs1, ids, frame_id=frame_id + 1, fps=1. / timer.average_time
+                    img_info1['raw_img'], online_tlwhs1, ids1, frame_id=frame_id + 1, fps=1. / timer.average_time
                 )
-                online_im1 = plot_tracking(
-                    img_info2['raw_img'], online_tlwhs2, ids, frame_id=frame_id + 1, fps=1. / timer.average_time
+                online_im2 = plot_tracking(
+                    img_info2['raw_img'], online_tlwhs2, ids2, frame_id=frame_id + 1, fps=1. / timer.average_time
                 )
                 
             if args.save_result:
