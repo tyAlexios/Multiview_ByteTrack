@@ -50,5 +50,6 @@ def linear_assignment(encoder, imgs_a, imgs_b, ids_a, ids_b, device):
     for ix, mx in enumerate(x):
         if mx >= 0:
             ids_b[mx] = ids_a[ix]
-            
+
+    return ids_b, unmatched_a, unmatched_b
 
