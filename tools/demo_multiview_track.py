@@ -412,10 +412,10 @@ def multiview_demo(encoder, predictor, vis_folder, current_time, args):
                         online_ids1.append(tid)
                         online_scores1.append(t.score)
                         x, y, w, h = tlwh
-                        x = int(x)
-                        y = int(y)
-                        w = int(w)
-                        h = int(h)
+                        x = int(x) + 1
+                        y = int(y) + 1
+                        w = int(w) + 1
+                        h = int(h) + 1
                         cropped_bbox_imgs1.append(img1[y:y+h, x:x+w])
                         results.append(
                             f"View1: {frame_id},{tid},{tlwh[0]:.2f},{tlwh[1]:.2f},{tlwh[2]:.2f},{tlwh[3]:.2f},{t.score:.2f},-1,-1,-1\n"
@@ -434,10 +434,10 @@ def multiview_demo(encoder, predictor, vis_folder, current_time, args):
                         online_ids2.append(tid)
                         online_scores2.append(t.score)
                         x, y, w, h = tlwh
-                        x = int(x)
-                        y = int(y)
-                        w = int(w)
-                        h = int(h)
+                        x = int(x) + 1
+                        y = int(y) + 1
+                        w = int(w) + 1
+                        h = int(h) + 1
                         cropped_bbox_imgs2.append(img1[y:y+h, x:x+w])
                         results.append(
                             f"View2: {frame_id},{tid},{tlwh[0]:.2f},{tlwh[1]:.2f},{tlwh[2]:.2f},{tlwh[3]:.2f},{t.score:.2f},-1,-1,-1\n"
