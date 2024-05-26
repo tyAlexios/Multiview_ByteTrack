@@ -153,7 +153,7 @@ class BYTETracker(object):
         #self.det_thresh = args.track_thresh
         self.det_thresh = args.track_thresh + 0.1
         self.buffer_size = int(frame_rate / 30.0 * args.track_buffer)
-        self.max_time_lost = self.buffer_size
+        self.max_time_lost = self.buffer_size + 5
         self.kalman_filter = KalmanFilter()
 
     def update(self, output_results, img_info, img_size):
