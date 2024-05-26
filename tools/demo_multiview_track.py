@@ -412,8 +412,8 @@ def multiview_demo(encoder, predictor, vis_folder, current_time, args):
                         online_ids1.append(tid)
                         online_scores1.append(t.score)
                         x, y, w, h = tlwh
-                        x = int(x)
-                        y = int(y)
+                        x = int(x) if x >= 0 else 0
+                        y = int(y) if y >= 0 else 0
                         w = int(w)
                         h = int(h)
                         cropped_bbox_imgs1.append(img1[y:y+h+1, x:x+w+1])
@@ -434,8 +434,8 @@ def multiview_demo(encoder, predictor, vis_folder, current_time, args):
                         online_ids2.append(tid)
                         online_scores2.append(t.score)
                         x, y, w, h = tlwh
-                        x = int(x)
-                        y = int(y)
+                        x = int(x) if x >= 0 else 0
+                        y = int(y) if y >= 0 else 0
                         w = int(w)
                         h = int(h)
                         cropped_bbox_imgs2.append(img2[y:y+h+1, x:x+w+1])
