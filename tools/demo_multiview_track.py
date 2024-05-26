@@ -9,8 +9,7 @@ import numpy as np
 from loguru import logger
 
 import sys
-sys.path.append("/home/physics/Documents/tianyi/MultiView_ByteTrack/")
-# sys.path.insert(0, "/home/physics/Documents/tianyi/MultiView_ByteTrack/yolox/data")
+sys.path.append(os.path.abspath("."))
 # from data_augment import preproc
 
 from yolox.data.data_augment import preproc
